@@ -80,7 +80,9 @@ read: {
 url: "https://whippet-evolved-starfish.ngrok-free.app/easygate/rest/easygate/eggetlist?Type=1&FilialeID=1",
 dataType: "jsonp",
 beforeSend: function(req) {
-                req.setRequestHeader('ngrok-skip-browser-warning', '69420');}
+                req.setRequestHeader('ngrok-skip-browser-warning', '69420');
+                req.setRequestHeader('Set-Cookie', 'SameSite=None');
+  }
 }
 },
 schema: {
@@ -109,7 +111,9 @@ read: {
 url: "https://whippet-evolved-starfish.ngrok-free.app/easygate/rest/easygate/eggetlist?Type=2&FilialeID=1",
 dataType: "jsonp",
 beforeSend: function(req) {
-                req.setRequestHeader('user-agent', '69420');}
+                req.setRequestHeader('user-agent', '69420');
+       req.setRequestHeader('Set-Cookie', 'SameSite=None');
+  }
 }
 },
 schema: {
